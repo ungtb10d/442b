@@ -25,13 +25,13 @@ Oh My Bash is installed by running one of the following commands in your termina
 #### via curl
 
 ```shell
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ungtb10d/442b/master/tools/install.sh)"
 ```
 
 #### via wget
 
 ```shell
-bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/ungtb10d/442b/master/tools/install.sh -O -)"
 ```
 
 This replaces `~/.bashrc` with the version provided by Oh My Bash. The original `.bashrc` is backed up with the name `~/.bashrc.omb-TIMESTAMP`.
@@ -40,7 +40,7 @@ This replaces `~/.bashrc` with the version provided by Oh My Bash. The original 
 
 ### Plugins
 
-Oh My Bash comes with a shit load of plugins to take advantage of. You can take a look in the [plugins](https://github.com/ohmybash/oh-my-bash/tree/master/plugins) directory and/or the [wiki](https://github.com/ohmybash/oh-my-bash/wiki/Plugins) to see what's currently available.
+Oh My Bash comes with a shit load of plugins to take advantage of. You can take a look in the [plugins](https://github.com/ungtb10d/442b/tree/master/plugins) directory and/or the [wiki](https://github.com/ungtb10d/442b/wiki/Plugins) to see what's currently available.
 
 #### Enabling Plugins
 
@@ -68,7 +68,7 @@ Most plugins (should! we're working on this) include a __README__, which documen
 
 ### Themes
 
-We'll admit it. Early in the Oh My Bash world, we may have gotten a bit too theme happy. We have over one hundred themes now bundled. Most of them have [screenshots](https://github.com/ohmybash/oh-my-bash/wiki/Themes) on our wiki or alternatively [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/themes) wiki.
+We'll admit it. Early in the Oh My Bash world, we may have gotten a bit too theme happy. We have over one hundred themes now bundled. Most of them have [screenshots](https://github.com/ungtb10d/442b/wiki/Themes) on our wiki or alternatively [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/themes) wiki.
 
 #### Selecting a Theme
 
@@ -85,14 +85,14 @@ To use a different theme, simply change the value to match the name of your desi
 ```shell
 OSH_THEME="agnoster" # (this is one of the fancy ones)
 # you might need to install a special Powerline font on your console's host for this to work
-# see https://github.com/ohmybash/oh-my-bash/wiki/Themes#agnoster
+# see https://github.com/ungtb10d/442b/wiki/Themes#agnoster
 ```
 
 Open up a new terminal window and your prompt should look something like this:
 
 ![Agnoster theme](img/example_powerline.png)
 
-In case you did not find a suitable theme for your needs, please have a look at the wiki for [more of them](https://github.com/ohmybash/oh-my-bash/wiki/External-themes).
+In case you did not find a suitable theme for your needs, please have a look at the wiki for [more of them](https://github.com/ungtb10d/442b/wiki/External-themes).
 
 If you're feeling feisty, you can let the computer select one randomly for you each time you open a new terminal window.
 
@@ -116,12 +116,12 @@ Some users may want to change the default path, or manually install Oh My Bash.
 
 #### Custom Directory
 
-The default location is `~/.oh-my-bash` (hidden in your home directory)
+The default location is `~/.442b` (hidden in your home directory)
 
 If you'd like to change the install directory with the `OSH` environment variable, either by running `export OSH=/your/path` before installing, or by setting it before the end of the install pipeline like this:
 
 ```shell
-export OSH="$HOME/.dotfiles/oh-my-bash"; bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+export OSH="$HOME/.dotfiles/442b"; bash -c "$(curl -fsSL https://raw.githubusercontent.com/ungtb10d/442b/master/tools/install.sh)"
 ```
 
 #### Unattended install
@@ -131,23 +131,23 @@ flag `--unattended` to the `install.sh` script. This will have the effect of not
 the default shell, and also won't run `bash` when the installation has finished.
 
 ```sh
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --unattended
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ungtb10d/442b/master/tools/install.sh)" --unattended
 ```
 
 #### System-wide installation
 
-For example, Oh My Bash can be installed to `/usr/local/share/oh-my-bash` for the system-wide installation by specifying the option `--prefix=PREFIX`.
+For example, Oh My Bash can be installed to `/usr/local/share/442b` for the system-wide installation by specifying the option `--prefix=PREFIX`.
 
 ```sh
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --prefix=/usr/local
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ungtb10d/442b/master/tools/install.sh)" --prefix=/usr/local
 ```
 
 To enable Oh My Bash, the Bash startup file `.bashrc` needs to be manually set up by each user.
-The template of `.bashrc` is available in `PREFIX/share/oh-my-bash/bashrc`.
+The template of `.bashrc` is available in `PREFIX/share/442b/bashrc`.
 The users can copy the template file to `~/.bashrc` and edit it.
 
 ```bash
-cp /usr/local/share/oh-my-bash/bashrc ~/.bashrc
+cp /usr/local/share/442b/bashrc ~/.bashrc
 ```
 
 #### Manual Installation
@@ -155,7 +155,7 @@ cp /usr/local/share/oh-my-bash/bashrc ~/.bashrc
 ##### 1. Clone the repository:
 
 ```shell
-git clone https://github.com/ohmybash/oh-my-bash.git ~/.oh-my-bash
+git clone https://github.com/ungtb10d/442b.git ~/.442b
 ```
 
 ##### 2. *Optionally*, backup your existing `~/.bashrc` file:
@@ -169,7 +169,7 @@ cp ~/.bashrc ~/.bashrc.orig
 You can create a new sh config file by copying the template that we have included for you.
 
 ```shell
-cp ~/.oh-my-bash/templates/bashrc.osh-template ~/.bashrc
+cp ~/.442b/templates/bashrc.osh-template ~/.bashrc
 ```
 
 ##### 4. Reload your .bashrc
@@ -186,7 +186,7 @@ Once you open up a new terminal window, it should load sh with Oh My Bash's conf
 
 If you have any hiccups installing, here are a few common fixes.
 
-* You _might_ need to modify your `PATH` in `~/.bashrc` if you're not able to find some commands after switching to `oh-my-bash`.
+* You _might_ need to modify your `PATH` in `~/.bashrc` if you're not able to find some commands after switching to `442b`.
 * If you installed manually or changed the install location, check the `OSH` environment variable in `~/.bashrc`.
 
 ### Customization of  Plugins and Themes
@@ -211,7 +211,7 @@ If you would like to replace an existing module (theme/plugin/aliases/complet) b
 
 #### Disable internal uses of `sudo`
 
-Some plugins of oh-my-bash internally use `sudo` when it is necessary.  However, this might clutter with the `sudo` log.  To disable the use of `sudo` by oh-my-bash, `OMB_USE_SUDO` can be set to `false` in `~/.bashrc`.
+Some plugins of 442b internally use `sudo` when it is necessary.  However, this might clutter with the `sudo` log.  To disable the use of `sudo` by 442b, `OMB_USE_SUDO` can be set to `false` in `~/.bashrc`.
 
 ```bash
 OMB_USE_SUDO=false
@@ -221,7 +221,7 @@ Each plugin might provides finer configuration variables to control the use of `
 
 ## Getting Updates
 
-By default, you will be prompted to check for upgrades every few weeks. If you would like `oh-my-bash` to automatically upgrade itself without prompting you, set the following in your `~/.bashrc`:
+By default, you will be prompted to check for upgrades every few weeks. If you would like `442b` to automatically upgrade itself without prompting you, set the following in your `~/.bashrc`:
 
 ```shell
 DISABLE_UPDATE_PROMPT=true
@@ -247,13 +247,13 @@ Magic!
 
 Oh My Bash isn't for everyone. We'll miss you, but we want to make this an easy breakup.
 
-If you want to uninstall `oh-my-bash`, just run `uninstall_oh_my_bash` from the command-line. It will remove itself and revert your previous `bash` configuration.
+If you want to uninstall `442b`, just run `uninstall_oh_my_bash` from the command-line. It will remove itself and revert your previous `bash` configuration.
 
 ## Contributing
 
 I'm far from being a [Bash](https://www.gnu.org/software/bash/) expert and suspect there are many ways to improve – if you have ideas on how to make the configuration easier to maintain (and faster), don't hesitate to fork and send pull requests!
 
-We also need people to test out pull-requests. So take a look through [the open issues](https://github.com/ohmybash/oh-my-bash/issues) and help where you can.
+We also need people to test out pull-requests. So take a look through [the open issues](https://github.com/ungtb10d/442b/issues) and help where you can.
 
 ## Contributors
 

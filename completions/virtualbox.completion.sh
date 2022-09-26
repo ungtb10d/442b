@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 _vboxmanage_realopts() {
     echo $(vboxmanage|grep -i vboxmanage|cut -d' ' -f2|grep '\['|tr -s '[\[\|\]\n' ' ')
     echo " "

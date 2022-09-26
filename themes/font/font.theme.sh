@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 #
 # One line prompt showing the following configurable information
 # for git:
@@ -12,10 +12,10 @@
 # 07:45:05 user@host ~ →
 #
 # Example inside clean git repo:
-# 07:45:05 user@host .oh-my-bash ±|master|→
+# 07:45:05 user@host .442b ±|master|→
 #
 # Example inside dirty git repo:
-# 07:45:05 user@host .oh-my-bash ±|master ✗|→
+# 07:45:05 user@host .442b ±|master ✗|→
 #
 # Example with virtual environment:
 # 07:45:05 (venv) user@host ~ →

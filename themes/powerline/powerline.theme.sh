@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 source "$OSH/themes/powerline/powerline.base.sh"
 

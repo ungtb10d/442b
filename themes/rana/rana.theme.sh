@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # Theme inspired on:
 #  - Ronacher's dotfiles (mitsuhikos) - http://github.com/mitsuhiko/dotfiles/tree/master/bash/
@@ -96,7 +96,7 @@ mitsuhikos_lastcommandfailed() {
   fi
 }
 
-# vcprompt for scm instead of oh-my-bash default
+# vcprompt for scm instead of 442b default
 demula_vcprompt() {
   if [[ ${VCPROMPT_EXECUTABLE-} ]]; then
     local D_VCPROMPT_FORMAT="on ${D_SCM_COLOR}%s${D_INTERMEDIATE_COLOR}:${D_BRANCH_COLOR}%b %r ${D_CHANGES_COLOR}%m%u ${D_DEFAULT_COLOR}"
@@ -190,5 +190,5 @@ _omb_theme_PROMPT_COMMAND() {
   PS2="${D_INTERMEDIATE_COLOR}$ ${D_DEFAULT_COLOR}"
 }
 
-# Runs prompt (this bypasses oh-my-bash $PROMPT setting)
+# Runs prompt (this bypasses 442b $PROMPT setting)
 _omb_util_add_prompt_command _omb_theme_PROMPT_COMMAND

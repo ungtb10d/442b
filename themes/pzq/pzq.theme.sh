@@ -2,7 +2,7 @@
 
 # Theme inspired by:
 #  - ys theme - https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/ys.zsh-theme
-#  - rana theme - https://github.com/ohmybash/oh-my-bash/blob/master/themes/rana/rana.theme.sh
+#  - rana theme - https://github.com/ungtb10d/442b/blob/master/themes/rana/rana.theme.sh
 #
 # by Ziqiang Pei<ziqiangpei@foxmail.com>
 
@@ -51,7 +51,7 @@ mitsuhikos_lastcommandfailed() {
   fi
 }
 
-# vcprompt for scm instead of oh-my-bash default
+# vcprompt for scm instead of 442b default
 demula_vcprompt() {
   if [[ ${VCPROMPT_EXECUTABLE-} ]]; then
     local D_VCPROMPT_FORMAT="on ${D_SCM_COLOR}%s${D_INTERMEDIATE_COLOR}:${D_BRANCH_COLOR}%b %r ${D_CHANGES_COLOR}%m%u ${D_DEFAULT_COLOR}"
@@ -140,5 +140,5 @@ _omb_theme_PROMPT_COMMAND() {
   PS2="${D_INTERMEDIATE_COLOR}$ ${D_DEFAULT_COLOR}"
 }
 
-# Runs prompt (this bypasses oh-my-bash $PROMPT setting)
+# Runs prompt (this bypasses 442b $PROMPT setting)
 _omb_util_add_prompt_command _omb_theme_PROMPT_COMMAND

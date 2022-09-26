@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # Simplistic one-liner theme to display source control management info beside
 # the ordinary Linux bash prompt.

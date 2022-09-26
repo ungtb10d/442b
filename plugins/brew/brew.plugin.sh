@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 alias brewp='brew pin'
 alias brews='brew list -1'

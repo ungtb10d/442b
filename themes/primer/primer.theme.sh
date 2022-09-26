@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # based of the candy theme, but minimized by odbol
 function _omb_theme_PROMPT_COMMAND() {

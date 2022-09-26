@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 shopt -s histappend # append to bash_history if Terminal.app quits
 
 ## Command history configuration

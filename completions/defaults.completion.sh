@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # defaults
 # Bash command line completion for defaults
 #

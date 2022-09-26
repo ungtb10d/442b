@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # link: https://github.com/ginatrapani/todo.txt-cli/blob/master/todo_completion
 
 _todo()

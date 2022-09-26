@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 #  ---------------------------------------------------------------------------
 #
 #  Description:  This file holds many useful BASH aliases and save our lives!

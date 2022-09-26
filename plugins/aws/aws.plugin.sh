@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # aws.plugin.sh
 # Author: Michael Anckaert <michael.anckaert@sinax.be>
 # Based on oh-my-zsh AWS plugin

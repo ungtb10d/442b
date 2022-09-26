@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # bu.plugin.sh
 # Author: Taleeb Midi <taleebmidi@gmail.com>
 # Based on oh-my-zsh AWS plugin

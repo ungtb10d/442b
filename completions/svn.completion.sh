@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # ------------------------------------------------------------
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file

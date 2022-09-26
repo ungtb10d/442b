@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # apm-bash-completion is written by Ugur Ozyilmazel
 # repo: https://github.com/vigo/apm-bash-completion

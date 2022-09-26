@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 #
 # This theme was obviously inspired a lot by 
 #

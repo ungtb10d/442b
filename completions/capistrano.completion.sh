@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # Bash completion support for Capistrano.
 
 export COMP_WORDBREAKS=${COMP_WORDBREAKS/\:/}

@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # written by David Pravec
 #   - feel free to /msg alekibango on IRC if you want to talk about this file
 

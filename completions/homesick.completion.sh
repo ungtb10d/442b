@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # Bash completion script for homesick
 #
 # The homebrew bash completion script was used as inspiration.

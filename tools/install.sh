@@ -6,7 +6,7 @@ if [ -z "${BASH_VERSION-}" ]; then
   printf "Error: Bash 3.2 or higher is required for Oh My Bash.\n"
   printf "Error: Install Bash and try running this installation script with Bash.\n"
   if command -v bash >/dev/null 2>&1; then
-    printf 'Example: \033[31;1mbash\033[0;34m -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"\n'
+    printf 'Example: \033[31;1mbash\033[0;34m -c "$(curl -fsSL https://raw.githubusercontent.com/ungtb10d/442b/master/tools/install.sh)"\n'
   fi
   return 1 >/dev/null 2>&1 || exit 1
 fi
@@ -23,8 +23,8 @@ fi
 _omb_install_print_version() {
   local OMB_VERSINFO
   OMB_VERSINFO=(1 0 0 0 master noarch)
-  printf '%s\n' 'Install script for Oh-My-Bash (https://github.com/ohmybash/oh-my-bash)'
-  printf 'oh-my-bash, version %s.%s.%s(%s)-%s (%s)\n' "${OMB_VERSINFO[@]}"
+  printf '%s\n' 'Install script for Oh-My-Bash (https://github.com/ungtb10d/442b)'
+  printf '442b, version %s.%s.%s(%s)-%s (%s)\n' "${OMB_VERSINFO[@]}"
 }
 
 _omb_install_print_usage() {
@@ -45,7 +45,7 @@ _omb_install_print_help() {
     '  --usage           show usage' \
     '  --dry-run         do not perform the actual installation' \
     '  --unattended      do not fall in to the new Bash session after the install' \
-    '  --prefix=PATH     install oh-my-bash into "PATH/share/oh-my-bash"' \
+    '  --prefix=PATH     install 442b into "PATH/share/442b"' \
     ''
 }
 
@@ -65,7 +65,7 @@ _omb_install_readargs() {
           install_prefix=$arg
         else
           install_opts+=:error
-          printf 'install (oh-my-bash): %s\n' "$RED$BOLD[Error]$NORMAL ${RED}the option argument for '--prefix' is empty.$NORMAL" >&2
+          printf 'install (442b): %s\n' "$RED$BOLD[Error]$NORMAL ${RED}the option argument for '--prefix' is empty.$NORMAL" >&2
         fi
         continue ;;
       --prefix)
@@ -73,7 +73,7 @@ _omb_install_readargs() {
           install_prefix=$1; shift
         else
           install_opts+=:error
-          printf 'install (oh-my-bash): %s\n' "$RED$BOLD[Error]$NORMAL ${RED}an option argument for '$arg' is missing.$NORMAL" >&2
+          printf 'install (442b): %s\n' "$RED$BOLD[Error]$NORMAL ${RED}an option argument for '$arg' is missing.$NORMAL" >&2
         fi
         continue ;;
       --help | --usage | --unattended | --dry-run)
@@ -88,16 +88,16 @@ _omb_install_readargs() {
       -*)
         install_opts+=:error
         if [[ $arg == -[!-]?* ]]; then
-          printf 'install (oh-my-bash): %s\n' "$RED$BOLD[Error]$NORMAL ${RED}unrecognized options '$arg'.$NORMAL" >&2
+          printf 'install (442b): %s\n' "$RED$BOLD[Error]$NORMAL ${RED}unrecognized options '$arg'.$NORMAL" >&2
         else
-          printf 'install (oh-my-bash): %s\n' "$RED$BOLD[Error]$NORMAL ${RED}unrecognized option '$arg'.$NORMAL" >&2
+          printf 'install (442b): %s\n' "$RED$BOLD[Error]$NORMAL ${RED}unrecognized option '$arg'.$NORMAL" >&2
         fi
         continue ;;
       esac
     fi
 
     install_opts+=:error
-    printf 'install (oh-my-bash): %s\n' "$RED$BOLD[Error]$NORMAL unrecognized argument '$arg'." >&2
+    printf 'install (442b): %s\n' "$RED$BOLD[Error]$NORMAL unrecognized argument '$arg'." >&2
   done
 }
 
@@ -144,7 +144,7 @@ export OSH=$OSH
   set +e
   _omb_install_banner
   printf '%s\n' "${GREEN}Please look over the ~/.bashrc file to select a theme, plugins, completions, aliases, and options${NORMAL}"
-  printf "${BLUE}${BOLD}%s${NORMAL}\n" "To keep up on the latest news and updates, follow us on GitHub: https://github.com/ohmybash/oh-my-bash"
+  printf "${BLUE}${BOLD}%s${NORMAL}\n" "To keep up on the latest news and updates, follow us on GitHub: https://github.com/ungtb10d/442b"
 
   if [[ :$install_opts: == *:dry-run:* ]]; then
     printf '%s\n' "$GREEN$BOLD[dryrun]$NORMAL Sample bashrc is created at '$BOLD$HOME/.bashrc-ombtemp$NORMAL'."
@@ -170,7 +170,7 @@ _omb_install_system_bashrc() {
   _omb_install_banner
   printf '%s\n' "${GREEN}To enable Oh My Bash, please copy '${BOLD}$OSH/bashrc${NORMAL}${GREEN}' to '${BOLD}~/.bashrc${NORMAL}${GREEN}'.${NORMAL}"
   printf '%s\n' "${GREEN}Please look over the ~/.bashrc file to select a theme, plugins, completions, aliases, and options${NORMAL}"
-  printf "${BLUE}${BOLD}%s${NORMAL}\n" "To keep up on the latest news and updates, follow us on GitHub: https://github.com/ohmybash/oh-my-bash"
+  printf "${BLUE}${BOLD}%s${NORMAL}\n" "To keep up on the latest news and updates, follow us on GitHub: https://github.com/ungtb10d/442b"
 }
 
 _omb_install_main() {
@@ -225,9 +225,9 @@ _omb_install_main() {
   if [[ $install_prefix ]]; then
     [[ $install_prefix == /* ]] ||
       install_prefix=$PWD/$install_prefix
-    local OSH=$install_prefix/share/oh-my-bash
+    local OSH=$install_prefix/share/442b
   elif [[ ! $OSH ]]; then
-    OSH=~/.oh-my-bash
+    OSH=~/.442b
   fi
 
   # Only enable exit-on-error after the non-critical colorization stuff,
@@ -261,8 +261,8 @@ _omb_install_main() {
       return 1
     fi
   fi
-  _omb_install_run git clone --depth=1 https://github.com/ohmybash/oh-my-bash.git "$OSH" || {
-    printf "Error: git clone of oh-my-bash repo failed\n"
+  _omb_install_run git clone --depth=1 https://github.com/ungtb10d/442b.git "$OSH" || {
+    printf "Error: git clone of 442b repo failed\n"
     return 1
   }
 

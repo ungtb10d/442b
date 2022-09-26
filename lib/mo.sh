@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 #
 #/ Mo is a mustache template rendering software written in bash.  It inserts
 #/ environment variables into templates.

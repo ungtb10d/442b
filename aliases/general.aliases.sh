@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 #------------------------------------------------------------------------------
 # Note on copyright (2022-08-23): The aliases defined in this file seems to
 # originally come from a blog post [1].  See also the comments in lib/base.sh.
@@ -22,7 +22,7 @@
 #   -----------------------------
 
 # Determines the use of the option `-v' on the first call
-# Ref. https://github.com/ohmybash/oh-my-bash/issues/351
+# Ref. https://github.com/ungtb10d/442b/issues/351
 function _omb_alias_general_cp_init {
   if (tmp=$(_omb_util_mktemp); trap 'rm -f "$tmp"{,.2}' EXIT; command cp -v "$tmp" "$tmp.2" &>/dev/null); then
     alias cp='cp -iv' && function _omb_alias_general_cp_init { command cp -iv "$@"; }

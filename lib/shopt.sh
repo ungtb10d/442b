@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # Various shell options collected in single file
 # taken from bash-sensible and other sources

@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # Bash completion support for the 'dirs' plugin (commands G, R).
 
 _dirs-complete() {

@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # tmux completion
 # See: http://www.debian-administration.org/articles/317 for how to write more.

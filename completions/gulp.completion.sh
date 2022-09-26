@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # Borrowed from grunt-cli
 # http://gruntjs.com/
 #

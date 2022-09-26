@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # based off of n0qorg
 # looks like, if you're in a git repo:

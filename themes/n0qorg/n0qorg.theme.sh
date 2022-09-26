@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # n0qorg theme by Florian Baumann <flo@noqqe.de>
 
 ## look-a-like

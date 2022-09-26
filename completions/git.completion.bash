@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # bash completion support for Git.
 _omb_completion_git_initialize() {
     if ! _omb_util_function_exists __gitdir; then

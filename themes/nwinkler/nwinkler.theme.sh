@@ -1,11 +1,11 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # Two line prompt showing the following information:
 # (time) SCM [username@hostname] pwd (SCM branch SCM status)
 # →
 #
 # Example:
-# (14:00:26) ± [foo@bar] ~/.oh-my-bash (master ✓)
+# (14:00:26) ± [foo@bar] ~/.442b (master ✓)
 # →
 #
 # The arrow on the second line is showing the exit status of the last command:

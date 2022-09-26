@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 SCM_THEME_PROMPT_DIRTY=''
 SCM_THEME_PROMPT_CLEAN=''

@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # Packer (http://www.packer.io) bash completion
 #

@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # Set NVM_DIR if it isn't already defined
 [[ -z "$NVM_DIR" ]] && export NVM_DIR="$HOME/.nvm"

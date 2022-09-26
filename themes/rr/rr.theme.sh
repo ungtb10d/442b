@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # rr is a simple one-liner prompt inspired by robbyrussell from ohmyzsh themes.
 #

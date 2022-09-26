@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 __tonka_time() {
   THEME_CLOCK_FORMAT="%H%M"

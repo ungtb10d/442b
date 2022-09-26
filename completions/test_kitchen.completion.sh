@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 __kitchen_instance_list () {
   # cache to .kitchen.list.yml
   if [[ .kitchen.yml -nt .kitchen.list.yml || .kitchen.local.yml -nt .kitchen.list.yml ]]; then

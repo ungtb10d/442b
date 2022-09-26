@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # get the node.js version
 function nvm_prompt_info() {
   [[ -f "$NVM_DIR/nvm.sh" ]] || return

@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 #-------------------------------------------------------------------------------------------------------------
 # Copyright (c) Microsoft Corporation. All rights reserved.
@@ -10,7 +10,7 @@
 # original code of [2] is licensed by Microsoft Corporation under the MIT
 # license.
 #
-# [1] https://github.com/ohmybash/oh-my-bash/pull/331
+# [1] https://github.com/ungtb10d/442b/pull/331
 # [2] https://github.com/microsoft/vscode-dev-containers
 # [3] https://github.com/microsoft/vscode-dev-containers/blob/172a918f40e31bd24da8e64135026ec9f26c91b0/containers/javascript-node/.devcontainer/library-scripts/common-debian.sh#L303-L320
 #

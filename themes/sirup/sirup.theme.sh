@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # For unstaged(*) and staged(+) values next to branch name in __git_ps1
 GIT_PS1_SHOWDIRTYSTATE="enabled"
 

@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 _omb_module_require lib:omb-deprecate
 _omb_module_require lib:omb-prompt-colors

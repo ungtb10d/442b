@@ -1,11 +1,11 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # Outputs current branch info in prompt format
 
 _omb_module_require lib:omb-prompt-colors
 
 function git_prompt_info() {
   local ref
-  if [[ "$(command git config --get oh-my-bash.hide-status 2>/dev/null)" != "1" ]]; then
+  if [[ "$(command git config --get 442b.hide-status 2>/dev/null)" != "1" ]]; then
     ref=$(command git symbolic-ref HEAD 2> /dev/null) || \
     ref=$(command git rev-parse --short HEAD 2> /dev/null) || return 0
     echo "$OSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$(parse_git_dirty)$OSH_THEME_GIT_PROMPT_SUFFIX"
@@ -17,7 +17,7 @@ function parse_git_dirty() {
   local STATUS=''
   local FLAGS
   FLAGS=('--porcelain')
-  if [[ "$(command git config --get oh-my-bash.hide-dirty)" != "1" ]]; then
+  if [[ "$(command git config --get 442b.hide-dirty)" != "1" ]]; then
     if [[ $POST_1_7_2_GIT -gt 0 ]]; then
       FLAGS+=( '--ignore-submodules=dirty' )
     fi

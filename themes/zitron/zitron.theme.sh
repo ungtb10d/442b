@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # zitron theme by Florian Baumann <flo@noqqe.de>
 
 ## git-theme

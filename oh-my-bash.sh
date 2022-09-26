@@ -11,13 +11,13 @@ case $- in
 esac
 
 if [ ! -n "${BASH_VERSION-}" ]; then
-  printf '%s\n' 'oh-my-bash: This is not a Bash. Use OMB with Bash 3.2 or higher.' >&2
+  printf '%s\n' '442b: This is not a Bash. Use OMB with Bash 3.2 or higher.' >&2
   return 1
 fi
 _omb_bash_version=$((BASH_VERSINFO[0] * 10000 + BASH_VERSINFO[1] * 100 + BASH_VERSINFO[2]))
 if ((_omb_bash_version < 30200)); then
-  printf '%s\n' "oh-my-bash: OMB does not support this version of Bash ($BASH_VERSION)" >&2
-  printf '%s\n' "oh-my-bash: Use OMB with Bash 3.2 or higher" >&2
+  printf '%s\n' "442b: OMB does not support this version of Bash ($BASH_VERSION)" >&2
+  printf '%s\n' "442b: Use OMB with Bash 3.2 or higher" >&2
   return 1
 fi
 
@@ -37,7 +37,7 @@ fi
 if [[ ! ${OSH_CUSTOM-} ]]; then
   OSH_CUSTOM=$OSH/custom
   [[ -d $OSH_CUSTOM && -O $OSH_CUSTOM ]] ||
-    OSH_CUSTOM=${XDG_DATA_HOME:-$HOME/.local/share}/oh-my-bash/custom
+    OSH_CUSTOM=${XDG_DATA_HOME:-$HOME/.local/share}/442b/custom
 fi
 
 # Set OSH_CACHE_DIR to the path where cache files should be created
@@ -45,7 +45,7 @@ fi
 if [[ ! ${OSH_CACHE_DIR-} ]]; then
   OSH_CACHE_DIR=$OSH/cache
   [[ -d $OSH_CACHE_DIR && -O $OSH_CACHE_DIR ]] ||
-    OSH_CACHE_DIR=${XDG_STATE_HOME:-$HOME/.local/state}/oh-my-bash/cache
+    OSH_CACHE_DIR=${XDG_STATE_HOME:-$HOME/.local/state}/442b/cache
 fi
 
 _omb_module_loaded=
@@ -68,7 +68,7 @@ _omb_module_require() {
     completion) locations=({"$OSH_CUSTOM","$OSH"}/completions/"$name".completion.{bash,sh}) ;;
     theme)      locations=({"$OSH_CUSTOM"{,/themes},"$OSH"/themes}/"$name"/"$name".theme.{bash,sh}) ;;
     *)
-      echo "oh-my-bash (module_require): unknown module type '$type'." >&2
+      echo "442b (module_require): unknown module type '$type'." >&2
       status=2
       continue ;;
     esac
@@ -81,7 +81,7 @@ _omb_module_require() {
       fi
     done
 
-    echo "oh-my-bash (module_require): module '$type:$name' not found." >&2
+    echo "442b (module_require): module '$type:$name' not found." >&2
     status=127
   done
 
@@ -101,7 +101,7 @@ _omb_module_require_alias()      { _omb_module_require "${@/#/alias:}"; }
 _omb_module_require_completion() { _omb_module_require "${@/#/completion:}"; }
 _omb_module_require_theme()      { _omb_module_require "${@/#/theme:}"; }
 
-# Load all of the config files in ~/.oh-my-bash/lib that end in .sh
+# Load all of the config files in ~/.442b/lib that end in .sh
 # TIP: Add files you don't want in git to .gitignore
 _omb_module_require_lib utils
 _omb_util_glob_expand _omb_init_files '{"$OSH","$OSH_CUSTOM"}/lib/*.{bash,sh}'
@@ -145,7 +145,7 @@ if [[ $OSH_THEME == random ]]; then
     OMB_THEME_RANDOM_SELECTED=${_omb_init_file##*/}
     OMB_THEME_RANDOM_SELECTED=${OMB_THEME_RANDOM_SELECTED%.theme.bash}
     OMB_THEME_RANDOM_SELECTED=${OMB_THEME_RANDOM_SELECTED%.theme.sh}
-    echo "[oh-my-bash] Random theme '$OMB_THEME_RANDOM_SELECTED' ($_omb_init_file) loaded..."
+    echo "[442b] Random theme '$OMB_THEME_RANDOM_SELECTED' ($_omb_init_file) loaded..."
   fi
   unset -v _omb_init_files _omb_init_file
 elif [[ $OSH_THEME ]]; then

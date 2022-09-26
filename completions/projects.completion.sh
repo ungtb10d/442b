@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 _pj() {
   [ -z "$PROJECT_PATHS" ] && return
   shift

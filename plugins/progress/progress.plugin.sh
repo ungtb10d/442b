@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 ############################---Description---###################################
 #                                                                              #
 # Summary       : Show a progress bar GUI on terminal platform                 #

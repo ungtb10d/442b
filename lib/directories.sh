@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # Common directories functions
 _omb_util_alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 _omb_util_alias ..='cd ../'                           # Go back 1 directory level

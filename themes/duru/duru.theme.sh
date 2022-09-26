@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 SCM_THEME_PROMPT_PREFIX="${_omb_prompt_teal} on ${_omb_prompt_green}"
 SCM_THEME_PROMPT_SUFFIX=""

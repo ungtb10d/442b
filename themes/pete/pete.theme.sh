@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 _omb_theme_PROMPT_COMMAND() {
   # Save history

@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # npm (Node Package Manager) completion
 # https://docs.npmjs.com/cli/completion

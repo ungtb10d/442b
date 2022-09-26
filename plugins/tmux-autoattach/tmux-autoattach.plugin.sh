@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # @chopnico 2021
 #
 # tmux-autoattach.plugin.sh
@@ -13,7 +13,7 @@
 # session.  Here, we assume the session name to be "0", which is the default
 # name for the first session.
 #
-# [1] https://github.com/ohmybash/oh-my-bash/pull/332
+# [1] https://github.com/ungtb10d/442b/pull/332
 
 _osh_plugin_tmux_autoattach_exit() {
 	[ -z "$TMUX" ] && tmux -2u new -As0 && exit

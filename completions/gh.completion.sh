@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # hub tab-completion script for bash.
 # This script complements the completion script that ships with git.
 

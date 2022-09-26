@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # Copyright (c) 2015, Toan Nguyen - https://nntoan.github.io
 # All rights reserved.
 #

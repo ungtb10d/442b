@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # colored ls
 export LSCOLORS='Gxfxcxdxdxegedabagacad'

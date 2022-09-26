@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # Axin Bash Prompt, inspired by theme "Sexy" and "Bobby"
 # thanks to them

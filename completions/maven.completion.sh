@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # Bash completion support for maven
 # inspired from : 
 #  - https://github.com/juven/maven-bash-completion

@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # git theming
 ZSH_THEME_GIT_PROMPT_PREFIX="${_omb_prompt_bold_navy}(${_omb_prompt_olive}%B"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%b${_omb_prompt_bold_navy})${_omb_prompt_reset_color} "

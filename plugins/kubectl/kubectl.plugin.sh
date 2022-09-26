@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # This command is used a LOT both below and in daily life
 alias k=kubectl
 

@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 # Emoji-based theme to display source control management and
 # virtual environment info beside the ordinary bash prompt.
@@ -67,5 +67,5 @@ function _omb_theme_PROMPT_COMMAND() {
   PS2="${icon_end}"
 }
 
-# Runs prompt (this bypasses oh-my-bash $PROMPT setting)
+# Runs prompt (this bypasses 442b $PROMPT setting)
 _omb_util_add_prompt_command _omb_theme_PROMPT_COMMAND

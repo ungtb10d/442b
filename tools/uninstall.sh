@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 
-# Note: this file is intentionally written in POSIX sh so that oh-my-bash can
+# Note: this file is intentionally written in POSIX sh so that 442b can
 # be uninstalled without bash.
 
 _omb_uninstall_contains_omb() {
-  command grep -qE '(source|\.)[[:space:]]+.*[/[:space:]]oh-my-bash\.sh' "$1" 2>/dev/null
+  command grep -qE '(source|\.)[[:space:]]+.*[/[:space:]]442b\.sh' "$1" 2>/dev/null
 }
 
-# Find the latest bashrc that do not source oh-my-bash.sh
+# Find the latest bashrc that do not source 442b.sh
 _omb_uninstall_find_bashrc_original() {
   _omb_uninstall_bashrc_original=
   printf '%s\n' "Looking for original bash config..."
   IFS='
 '
-  for _omb_uninstall_file in $(printf '%s\n' ~/.bashrc.omb-backup-?????????????? | sort -r) ~/.bashrc.pre-oh-my-bash; do
+  for _omb_uninstall_file in $(printf '%s\n' ~/.bashrc.omb-backup-?????????????? | sort -r) ~/.bashrc.pre-442b; do
     [ -f "$_omb_uninstall_file" ] || [ -h "$_omb_uninstall_file" ] || continue
     _omb_uninstall_contains_omb "$_omb_uninstall_file" && continue
     _omb_uninstall_bashrc_original=$_omb_uninstall_file
@@ -37,9 +37,9 @@ if [ "$_omb_uninstall_confirmation" != y ] && [ "$_omb_uninstall_confirmation" !
 fi
 unset _omb_uninstall_confirmation
 
-if [ -d ~/.oh-my-bash ]; then
-  printf '%s\n' "Removing ~/.oh-my-bash"
-  command rm -rf ~/.oh-my-bash
+if [ -d ~/.442b ]; then
+  printf '%s\n' "Removing ~/.442b"
+  command rm -rf ~/.442b
 fi
 
 _omb_uninstall_bashrc_original=
@@ -67,7 +67,7 @@ if [ -n "$_omb_uninstall_bashrc_original" ]; then
   command mv "$_omb_uninstall_bashrc_original" ~/.bashrc;
   printf '%s\n' "Your original bash config was restored. Please restart your session."
 else
-  command sed '/oh-my-bash\.sh/s/^/: #/' ~/"${_omb_uninstall_bashrc_uninstalled:-.bashrc}" >| ~/.bashrc.omb-temp && \
+  command sed '/442b\.sh/s/^/: #/' ~/"${_omb_uninstall_bashrc_uninstalled:-.bashrc}" >| ~/.bashrc.omb-temp && \
     command mv ~/.bashrc.omb-temp ~/.bashrc
 fi
 

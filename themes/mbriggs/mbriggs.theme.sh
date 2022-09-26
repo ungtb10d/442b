@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # ------------------------------------------------------------------#
 #          FILE: mbriggs.zsh-theme                                  #
 #            BY: Matt Briggs (matt@mattbriggs.net)                  #

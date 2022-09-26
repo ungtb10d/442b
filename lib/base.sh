@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 #------------------------------------------------------------------------------
 # Note on copyright (2022-08-23): The contents of this file seems to have been
 # originally introduced in a blog post [1].  The author also put it on Gist

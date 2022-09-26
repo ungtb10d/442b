@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 SCM_THEME_PROMPT_DIRTY=" ${_omb_prompt_bold_brown}⊘${_omb_prompt_normal}"
 SCM_THEME_PROMPT_CLEAN=" ${_omb_prompt_bold_green}✓${_omb_prompt_normal}"

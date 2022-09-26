@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 
 OSH_THEME_GIT_PROMPT_DIRTY="✗"
 OSH_THEME_GIT_PROMPT_CLEAN="✓"

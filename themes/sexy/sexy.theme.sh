@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 # Sexy Bash Prompt, inspired by "Extravagant Zsh Prompt"
 # Screenshot: http://cloud.gf3.ca/M5rG
 # A big thanks to \amethyst on Freenode

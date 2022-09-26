@@ -1,4 +1,4 @@
-#! bash oh-my-bash.module
+#! bash 442b.module
 #
 # Based on 'bobby' theme with the addition of python_venv
 #
